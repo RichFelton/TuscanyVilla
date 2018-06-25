@@ -1,7 +1,7 @@
 ﻿.container {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 56.5px 385px 170px 70px 329px 70px 70px 330px 70px 70px /*10*/ 330px 70px 170px 70px 409px 409px 409px 70px 170px 282px /*20*/ 174px 400px 235px;
+    grid-template-rows: 56.5px 385px 170px 70px 329px 70px 70px 330px 70px 70px /*10*/ 330px 70px 170px 70px 409px 409px 409px 70px 170px 282px /*20*/ 174px 400px 200px;
     grid-gap: 0px 0px;
     text-align: center;
     vertical-align: middle;
@@ -296,3 +296,23 @@ body{
         background-position: 10px 50%;
     }
 }*/
+
+.grid-item-25 {
+    grid-row: 21;
+    grid-column: 1 / span 9;
+    background-color: dimgray;
+}
+
+
+.form action {
+    grid-row: 22;
+    grid-column: 1 / span 9;
+    background-color: white;
+}
+
+.grid-item-27 {
+    grid-row: 23;
+    grid-column: 1 / span 9;
+    background-color: dimgray;
+    color: white;
+}
