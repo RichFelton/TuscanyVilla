@@ -1,7 +1,7 @@
 ﻿.container {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 56.5px 385px 170px 70px 329px 70px 70px 330px 70px 70px /*10*/ 330px 70px 170px 70px 409px 409px 409px 70px 170px 282px /*20*/ 174px 400px 200px;
+    grid-template-rows: 56.5px 385px 170px 70px 329px 70px 70px 283px 70px 70px /*10*/ 330px 70px 170px 70px 409px 409px 409px 70px 170px 282px /*20*/ 174px 400px 200px;
     grid-gap: 0px 0px;
     text-align: center;
     vertical-align: middle;
@@ -10,6 +10,8 @@
     margin: 0;
     max-width: 1400px;
     width: 100%;
+    font-family: 'Microsoft Sans Serif';
+
 }
 
 body{
@@ -21,8 +23,6 @@ body{
     grid-row: 1;
     background-color: dimgrey;
     vertical-align: text-bottom;
-    /*text-justify:;*/
-    font-family: Arial;
     font-size: medium;
     /*display: flex;
     flex-direction: row-reverse;*/
@@ -57,9 +57,9 @@ body{
     background-size: cover;
     grid-column: 1 / span 6;
     grid-row: 2;
-    font-family: Helvetica, sans-serif;
     text-align: center;
     justify-content: center;
+    font-size: larger;
 }
 
 .jumbotron1a {
@@ -112,28 +112,13 @@ body{
 }
 
 
-.grid-item-6 {
-    grid-row: 8;
-    grid-column: 1 / span 9;
-    background-color: dimgrey;
-    color: white;
-    text-align: left;
-}
-
-.grid-item-7 {
-    grid-row: 9;
-    grid-column: 1 / span 9;
-    background-color: white;
-    /*This is top border of Location #1*/
-}
-
 .grid-item-8 {
     grid-row: 11;
     grid-column: 2 / span 3;
     background-color: white;
     color: gray;
     text-align: left;
-    /*This is text that is left of location Mountain Villa image*/
+    /*This is the text that is left of location Mountain Villa image*/
 }
 
 .grid-item-9 {
@@ -164,16 +149,23 @@ body{
     background-size: cover;
     grid-row: 15;
     grid-column: 1 / span 3;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    align-content: center;
+    justify-content: center;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
+
 .grid-item-14 {
+    display: flex;
     grid-row: 15;
+    align-items: center;
+    flex-direction: column;
     grid-column: 4 / span 3;
-    color: black;
+    color: dimgray;
+    justify-content: center;
+    margin: 25px;
 }
 
 .jumbotron15 {
@@ -181,53 +173,75 @@ body{
     background-size: cover;
     grid-row: 15;
     grid-column: 7 / span 3;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
     color: white;
 }
 
 .grid-item-16 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 25px;
     grid-row: 16;
     grid-column: 1 / span 3;
-    color: black;
+    color: dimgray;
 }
 
 .jumbotron17 {
+    display: flex;
+    align-items: center;
     background-image: url('Images/314-348x348.jpg');
     background-size: cover;
     grid-row: 16;
     grid-column: 4 / span 3;
     align-content: center;
+    justify-content: center;
 }
 
 .grid-item-18 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 25px;
     grid-row: 16;
     grid-column: 7 / span 3;
-    color: black;
+    color: dimgray;
 }
 
 .jumbotron19 {
     background-image: url('Images/Villa-Rucellai-Toscani-2812-2-348x348.jpg');
+    display: flex;
+    align-items: center;
     grid-row: 17;
     grid-column: 1 / span 3;
     background-size: cover;
-    vertical-align: central;
+    justify-content: center;
     text-align: center;
+    margin: 25px;
 }
 
 .grid-item-20 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-row: 17;
     grid-column: 4 / span 3;
-    color: black;
+    color: dimgray;
+    flex-direction: column;
 }
 
 .grid-item-21 {
+    display: flex;
     background-image: url('Images/Villa-Vanna-231-348x348.jpg');
     background-size: cover;
     grid-row: 17;
     grid-column: 7 / span 3;
-    vertical-align: central;
+    align-items: center;
+    justify-content: center;
 }
 
 .grid-item-22 {
@@ -241,11 +255,11 @@ body{
     background-color: dimgray;
 }
 
-/*.grid-item-24 {
+.grid-item-24 {
     grid-row: 20;
     grid-column: 1 / span 9;
     color: dimgray;
-}*/
+}
 
 /*.carousel-wrapper {
     height: 282px;
@@ -304,10 +318,14 @@ body{
 }
 
 
-.form action {
+.grid-item-26 {
+    display: flex;
     grid-row: 22;
-    grid-column: 1 / span 9;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 5 / span 5;
     background-color: white;
+    margin: 30px;
 }
 
 .grid-item-27 {
@@ -316,3 +334,56 @@ body{
     background-color: dimgray;
     color: white;
 }
+
+.grid-item-29 {
+    grid-row: 22;
+    grid-column: 1 / span 3;
+    color: gray;
+    text-align: left;
+    margin: 30px;
+}
+
+.grid-item-30 {
+    grid-row: 7;
+    grid-column: 1 / span 9;
+    background-color: dimgray;
+}
+.grid-item-31 {
+    grid-row: 9;
+    grid-column: 1 / span 9;
+    background-color: dimgray;
+}
+
+.jumbotron9 {
+    background-color: dimgray;
+    display: flex;
+    align-items: center;
+    grid-row: 8;
+    grid-column: 1 / span 9;
+    background-size: cover;
+    text-align: left;
+}
+    .jumbotron8 {
+    grid-row: 8;
+    grid-column: 6 / span 4;
+   
+    color: white;
+    text-align: left;
+}
+
+    .jumbotron7 {
+        grid-row: 8;
+        grid-column: 2 / span 3;
+    }
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
